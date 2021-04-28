@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+
+
+<body>
+<br> <br>
+<div class="heading">
+ <h1> WELCOME TO MY SITE </h1>
+</div>
+<br> <br>
+
+<section class="slider mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Slider part</h1>
+
+        <div id="carex1" class="carousel slide carousel-fade " data-bs-ride="carousel">
+     
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carex1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carex1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carex1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+  
+     <div class="carousel-inner">
+
+        
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="images/image2.jpeg" class="d-block w-100" alt="slider2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="images/image1.jpg" class="d-block w-100" alt="slider3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="images/preview.jpg" class="d-block w-100" alt="slider4">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+  </div>
+ 
+  <button class="carousel-control-prev" type="button" data-bs-target="#carex1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carex1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br> <br>
+
+<section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <h1 class="text-center">Alert part</h1>
+        <div class="alert alert-primary" role="alert">
+           A simple primary alert—check it out!
+       </div>           
+      </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+       <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>
+    </div>
+  </div>
+</section>
+
+<br> <br>
+
+
+<section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+
+     <!--acc--> 
+     <h1 class="text-center">Accordian part</h1>      
+<div class="accordion" id="accex_1">
+  <!--item 1 start-->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true" aria-controls="c1">
+        Lorem ipsum dolor sit amet, 
+      </button>
+    </h2>
+    <div id="c1" class="accordion-collapse collapse show" aria-labelledby="head1" data-bs-parent="#accex_1">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </div>
+
+  <!--item 2 start-->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+       Lorem ipsum dolor sit amet, consectetur adipisicing 
+      </button>
+    </h2>
+    <div id="c2" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="#accex_1">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+
+  <!--item 3 start-->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+       Lorem ipsum dolor sit amet, consectetur adipisicing 
+      </button>
+    </h2>
+    <div id="c3" class="accordion-collapse collapse" aria-labelledby="head3" data-bs-parent="#accex_1">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Badges part</h1>
+            <span class="badge rounded-pill bg-dark">Dark</span>
+            <span class="badge rounded-pill bg-primary">primary</span>
+            <span class="badge rounded-pill bg-secondary">secondary</span>
+            <span class="badge rounded-pill bg-success">success</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <br> <br>
+
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Button part</h1>
+            <button type="button" class="btn btn-outline-primary  btn-lg">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <br> <br>
+
+    <section class="mt-5" >
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Card part</h1>
+          <div class="col-lg-4">
+            <div class="card text-center">
+              <img src="images/image1.jpg" class="card-img-top" alt="crd1">
+              <div class="card-header">
+                <p>This is header</p>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">This is card 1</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                <div class="card-footer">
+                  <p>This is footer</p>
+
+                  <a href="#" class="card-link float-start">link1</a>
+                  <a href="#" class="card-link float-end">link2</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+         <div class="col-lg-4">
+            <div class="card text-center">
+              <img src="images/image2.jpeg" class="card-img-top" alt="crd1">
+              <div class="card-header">
+                <p>This is header</p>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">This is card 2</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                <div class="card-footer">
+                  <p>This is footer</p>
+
+                  <a href="#" class="card-link float-start">link1</a>
+                  <a href="#" class="card-link float-end">link2</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card text-center">
+              <img src="images/preview.jpg" class="card-img-top" alt="crd1">
+              <div class="card-header">
+                <p>This is header</p>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">This is card 3</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                <div class="card-footer">
+                  <p>This is footer</p>
+
+                  <a href="#" class="card-link float-start">link1</a>
+                  <a href="#" class="card-link float-end">link2</a>
+                </div>
+
+            </div>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+    </section>
+
+    <br> <br>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Dropdown part</h1>
+            <div>
+              <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Dropdown button
+               </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                 <li><a class="dropdown-item" href="#">Action</a></li>
+                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Modal part</h1>
+            <div>
+               
+               <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     This is a demo Modal
+                    </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">This is the title part</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Offcanvas part</h1>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+             Link with href
+            </a>
+               <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                 Button with data-bs-target
+               </button>
+
+               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                 <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                 </div>
+                 <div class="offcanvas-body">
+                   <div>
+                   Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                   </div>
+                   <div class="dropdown mt-3">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                       Dropdown button
+                     </button>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Navs & Tabs part</h1>
+            <div>
+              
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+               </li>
+             </ul>
+             <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">This is the home tab</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">This is the profile tab</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">This is the contact tab</div>
+            </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-5">
+            <div class="d-flex align-items-start">
+               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                 <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+               </div>
+               <div class="tab-content" id="v-pills-tabContent">
+                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">This is home</div>
+                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">This is profile</div>
+                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">This is message</div>
+                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">This is setting</div>
+               </div>
+             </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <br> <br>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Progress part</h1>
+
+              <div class="progress">
+                 <strong>HTML 5 </strong>
+                 <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width:80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <div class="progress mt-2">
+                 <strong>CSS 3 </strong>
+                 <div class="progress-bar progress-bar-striped bg-Warning" role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <div class="progress mt-2">
+                 <strong>Bootstrap 5 </strong>
+                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">Pagination part</h1>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS LINK  -->
+
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/script.js"></script>
+    
+</body>
+</html>
